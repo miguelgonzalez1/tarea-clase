@@ -1,5 +1,5 @@
 #include <sdio.h>
-void main ()
+void main()
 (
   printf ("Hello world");
 )
