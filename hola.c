@@ -1,5 +1,5 @@
 #imclude <sdio.h>
-vgid main ()
+void main ()
 (
-  printf (Hello word);
+  printf ("Hello word");
 )
