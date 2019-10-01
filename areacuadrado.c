@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #define pi 3.1416
 
 void main()
