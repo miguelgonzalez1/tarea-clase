@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define pi 3,1416
+#define pi 3.1416
 
 void main()
 {
@@ -7,6 +7,6 @@ void main()
     printf("Ingrese el radio");
     scanf("%f",&radio);
     area=pi*radio*radio;
-    printf("El area es %f, area");
+    printf("El area es %f.", area);
 }
 
