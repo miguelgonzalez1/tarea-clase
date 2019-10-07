@@ -1,10 +1,23 @@
 #include <stdio.h>
-
-int main(void) {
-    float far,c; //esta es la declaracion de variables
-    printf("Ingrese los grados Farenheit:"); //en esta linea el computador nos pide ingresar los grados ºF
-    scanf("%f",&far); //ingresamos los grados ºF
-    c=(float) 5/9*(far-32); //esta es la formula para cambiar de grados ºF a ºC
-    printf("%.2f grados Farenheit es igual a %.f grados Centigrados \n" ,far,c); //aca nos muestra la conversion exacta
-	return 0;
+int main()
+{
+    int n;
+     printf("Seleccione una conversion\n"); //me pide que ingrese 1 o 2 dependiento lo que necesito
+     printf("1. C  a  F\n"); //si selecciono 1 me cambia de ºC a ºF
+     printf("2. F  a  C\n"); //si selecciono 1 me cambia de ºF a ºC
+     scanf("%d",&n); //ingreso el numero 1 o 2
+      if(n==1){  //si es 1...
+          float c;
+          printf("Ingresa grados centigrados\n"); //me dice vque ingrese los grados ºc
+           scanf("%f",&c); //ingreso el valor
+          double f=(c*9/5)+(32); //la formula para el cambio de ºC a ºF
+          printf("%0.2fC equivale a %0.2lfF",c,f); //me da en la pantalla la respuesta
+      }else{ // si el numero es 2...
+          float f;
+          printf("Ingresa grados fahrenheit\n");//me dice que ingrese los grados ºF
+          scanf("%f",&f); //ingreso el valor
+          double c=(f-32)*5/9; //formula para el cambio de ºF a ºC
+          printf("%0.2fF equivale  a %0.2lfC",f,c); //me muestra el resultado en pantalla
+      }
+    return 0;
 }
