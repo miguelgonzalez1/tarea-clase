@@ -1,3 +1,8 @@
+//1. Realizar un programa en C que permita ingresar por teclado los grados centígrados y Fahrenheit y realice la conversión.
+//Datos de entrada: son el 1 o 2 dependiendo la conversion que quiere hacer, también ingresar o los grados centígrados o los grados fahrenheit.
+//El proceso son las formulas de conversion que son F=(ºc*9/5)+32 y C=(ºF-32)*5/9
+//Los datos de salida son los grados convertidos a los que seleccionamos al inicio sea ºC o ºF
+
 #include <stdio.h>
 int main()
 {
